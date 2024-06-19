@@ -38,34 +38,34 @@ export type Database = {
       }
       camp_info: {
         Row: {
+          address: string
+          area: string
+          camp_name: string
           created_at: string
           id: number
-          キャンプ場名: string
-          住所: string
-          値段: string
-          最寄りの温泉: string
-          受付時間: string
-          地域: string
+          price: string
+          reception_time: string
+          spa: string
         }
         Insert: {
+          address: string
+          area: string
+          camp_name: string
           created_at?: string
           id?: number
-          キャンプ場名: string
-          住所: string
-          値段: string
-          最寄りの温泉: string
-          受付時間: string
-          地域: string
+          price: string
+          reception_time: string
+          spa: string
         }
         Update: {
+          address?: string
+          area?: string
+          camp_name?: string
           created_at?: string
           id?: number
-          キャンプ場名?: string
-          住所?: string
-          値段?: string
-          最寄りの温泉?: string
-          受付時間?: string
-          地域?: string
+          price?: string
+          reception_time?: string
+          spa?: string
         }
         Relationships: []
       }
